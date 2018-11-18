@@ -1,0 +1,6 @@
+*.pyc
+*~
+.#*
+\#*#
+.idea
+decade/settings/dev.py

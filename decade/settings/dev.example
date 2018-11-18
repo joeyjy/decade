@@ -1,0 +1,20 @@
+"""Development settings and globals."""
+
+from os.path import join, normpath
+
+from .base import *
+
+DEBUG = True
+
+TEMPLATE_DEBUG = DEBUG
+
+DATABASES = {
+    'default':{
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'ur_db_name',
+            'USER': 'ur_db_user',
+            'PASSWORD': 'ur_db_password',
+            'HOST': 'ur_db_host',
+            'PORT': '',
+    }
+}
