@@ -2,10 +2,10 @@ from django.db import models
 from client.models import Client
 from cargo.models import Cargo
 
-TYPE = {
-    0: u'买入',
-    1: u'卖出'
-}
+TYPE = (
+    (0, u'买入'),
+    (1, u'卖出'),
+)
 # Create your models here.
 class Order(models.Model):
     orderType = models.IntegerField(choices=TYPE, help_text=u'交易类型')

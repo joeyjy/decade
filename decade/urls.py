@@ -18,9 +18,20 @@ from django.urls import include, path, re_path
 from rest_framework import routers
 
 from member.serializers import UserViewSet
+from cargo.viewsets import CargoViewSet
+from client.viewsets import ClientViewSet, CompanyViewSet
+from depot.viewsets import DepotViewSet
+from invoice.viewsets import InvoiceViewSet
+from order.viewsets import OrderViewSet
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
+router.register(r'cargo', CargoViewSet)
+router.register(r'client', ClientViewSet)
+router.register(r'company', CompanyViewSet)
+router.register(r'depot', DepotViewSet)
+router.register(r'invoice', InvoiceViewSet)
+router.register(r'order', OrderViewSet)
             
 urlpatterns = [
     path('Haha_U_Bro_hmmm/', admin.site.urls),

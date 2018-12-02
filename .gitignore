@@ -4,3 +4,4 @@
 \#*#
 .idea
 decade/settings/dev.py
+*/migrations/*

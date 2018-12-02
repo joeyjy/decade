@@ -26,7 +26,11 @@ Require Python3.x, Django2.0
     $ emacs decade/settings/dev.py  
     \# change DATABASES section  
 
-6. Launch
+6. create database (only fresh installation)
+
+    $ python manage.py makemigrations
+
+7. Launch
 
     $ python manage.py migrate  
     $ python manage.py runserver 0.0.0.0:8000  
